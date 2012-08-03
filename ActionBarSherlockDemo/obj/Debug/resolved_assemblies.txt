@@ -1,0 +1,2 @@
+C:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockDemo\bin\Debug\ActionBarSherlockDemo.dll
+C:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockDemo\bin\Debug\ActionBarSherlockBinding.dll

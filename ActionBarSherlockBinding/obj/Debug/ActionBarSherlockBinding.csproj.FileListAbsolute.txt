@@ -1,0 +1,8 @@
+C:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockBinding\bin\Debug\ActionBarSherlockBinding.dll
+C:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockBinding\bin\Debug\ActionBarSherlockBinding.pdb
+C:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockBinding\obj\Debug\ActionBarSherlockBinding.dll
+C:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockBinding\obj\Debug\ActionBarSherlockBinding.pdb
+c:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockDemo\ActionBarSherlockBinding\bin\Debug\ActionBarSherlockBinding.dll
+c:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockDemo\ActionBarSherlockBinding\bin\Debug\ActionBarSherlockBinding.pdb
+c:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockDemo\ActionBarSherlockBinding\obj\Debug\ActionBarSherlockBinding.dll
+c:\Users\CSchulte\Documents\Visual Studio 2010\Projects\ActionBarSherlockDemo\ActionBarSherlockDemo\ActionBarSherlockBinding\obj\Debug\ActionBarSherlockBinding.pdb

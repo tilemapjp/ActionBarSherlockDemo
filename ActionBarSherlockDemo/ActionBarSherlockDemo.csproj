@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08A93689-37F0-45F3-976C-1AA7FA4D869A}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActionBarSherlockDemo</RootNamespace>
+    <AssemblyName>ActionBarSherlockDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi%3bx86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidJavaLibrary Include="Jars\actionbarsherlock.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidJavaLibrary Include="Jars\android-support-v4.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Menu\Options.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\color\abs__primary_text_disable_only_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\color\abs__primary_text_disable_only_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\color\abs__primary_text_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\color\abs__primary_text_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-xlarge\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__activated_background_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__activated_background_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__btn_cab_done_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__btn_cab_done_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__ic_menu_moreoverflow_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__ic_menu_moreoverflow_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__item_background_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__item_background_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__list_selector_background_transition_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__list_selector_background_transition_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__list_selector_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__list_selector_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__progress_horizontal_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__progress_horizontal_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__progress_medium_holo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__spinner_ab_holo_dark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__spinner_ab_holo_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable\abs__tab_indicator_ab_holo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_bottom_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_bottom_solid_inverse_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_bottom_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_bottom_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_bottom_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_share_pack_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_share_pack_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_solid_shadow_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_stacked_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_stacked_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_stacked_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_stacked_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ab_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__btn_cab_done_default_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__btn_cab_done_default_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__btn_cab_done_focused_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__btn_cab_done_focused_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__btn_cab_done_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__btn_cab_done_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__cab_background_bottom_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__cab_background_bottom_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__cab_background_top_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__cab_background_top_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__dialog_full_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__dialog_full_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_ab_back_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_ab_back_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_cab_done_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_cab_done_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_menu_moreoverflow_normal_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_menu_share_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__ic_menu_share_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_activated_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_divider_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_divider_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_focused_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_longpressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_selector_disabled_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__list_selector_disabled_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__menu_dropdown_panel_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__menu_dropdown_panel_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__progress_bg_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__progress_bg_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__progress_primary_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__progress_primary_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__progress_secondary_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__progress_secondary_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_48_inner_holo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_48_outer_holo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_default_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_default_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_disabled_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_disabled_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_focused_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_focused_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__spinner_ab_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__tab_selected_focused_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__tab_selected_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__tab_selected_pressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-hdpi\abs__tab_unselected_pressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_bottom_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_bottom_solid_inverse_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_bottom_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_bottom_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_bottom_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_share_pack_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_share_pack_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_solid_shadow_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_stacked_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_stacked_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_stacked_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_stacked_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ab_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__btn_cab_done_default_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__btn_cab_done_default_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__btn_cab_done_focused_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__btn_cab_done_focused_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__btn_cab_done_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__btn_cab_done_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__cab_background_bottom_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__cab_background_bottom_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__cab_background_top_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__cab_background_top_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__dialog_full_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__dialog_full_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_ab_back_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_ab_back_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_cab_done_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_cab_done_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_menu_moreoverflow_normal_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_menu_share_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__ic_menu_share_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_activated_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_divider_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_divider_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_focused_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_longpressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_selector_disabled_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__list_selector_disabled_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__menu_dropdown_panel_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__menu_dropdown_panel_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__progress_bg_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__progress_bg_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__progress_primary_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__progress_primary_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__progress_secondary_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__progress_secondary_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_48_inner_holo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_48_outer_holo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_default_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_default_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_disabled_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_disabled_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_focused_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_focused_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__spinner_ab_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__tab_selected_focused_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__tab_selected_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__tab_selected_pressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-mdpi\abs__tab_unselected_pressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-v11\abs__progress_medium_holo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_bottom_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_bottom_solid_inverse_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_bottom_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_bottom_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_bottom_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_share_pack_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_share_pack_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_solid_shadow_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_stacked_solid_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_stacked_solid_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_stacked_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_stacked_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_transparent_dark_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ab_transparent_light_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__btn_cab_done_default_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__btn_cab_done_default_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__btn_cab_done_focused_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__btn_cab_done_focused_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__btn_cab_done_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__btn_cab_done_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__cab_background_bottom_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__cab_background_bottom_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__cab_background_top_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__cab_background_top_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__dialog_full_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__dialog_full_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_ab_back_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_ab_back_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_cab_done_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_cab_done_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_menu_moreoverflow_normal_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_menu_share_holo_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__ic_menu_share_holo_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_activated_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_divider_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_divider_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_focused_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_longpressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_selector_disabled_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__list_selector_disabled_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__menu_dropdown_panel_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__menu_dropdown_panel_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__progress_bg_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__progress_bg_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__progress_primary_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__progress_primary_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__progress_secondary_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__progress_secondary_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_48_inner_holo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_48_outer_holo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_default_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_default_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_disabled_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_disabled_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_focused_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_focused_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_pressed_holo_dark.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__spinner_ab_pressed_holo_light.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__tab_selected_focused_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__tab_selected_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__tab_selected_pressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\drawable-xhdpi\abs__tab_unselected_pressed_holo.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_bar_home.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_bar_tab.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_bar_tab_bar_view.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_bar_title_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_menu_item_layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_menu_layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_mode_bar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__action_mode_close_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__activity_chooser_view.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__activity_chooser_view_list_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__dialog_title_holo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__list_menu_item_checkbox.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__list_menu_item_icon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__list_menu_item_layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__list_menu_item_radio.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__popup_menu_item_layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__screen_action_bar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__screen_action_bar_overlay.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__screen_simple.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\abs__screen_simple_overlay_action_mode.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\sherlock_spinner_dropdown_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout\sherlock_spinner_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout-large\abs__action_mode_close_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout-v14\sherlock_spinner_dropdown_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout-v14\sherlock_spinner_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout-xlarge\abs__screen_action_bar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\layout-xlarge\abs__screen_action_bar_overlay.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__attrs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__bools.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__ids.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values\abs__themes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-land\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-large\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-large-hdpi-1024x600\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-large-land-hdpi-1024x600\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-large-land-mdpi-1024x600\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-large-mdpi-1024x600\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-sw600dp\abs__bools.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-sw600dp\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-v11\abs__themes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-v14\abs__styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-v14\abs__themes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-w360dp\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-w480dp\abs__bools.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-w480dp\abs__config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-w500dp\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="AbsResources\values-w600dp\abs__dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AbsResources\drawable-ldpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActionBarSherlockBinding\ActionBarSherlockBinding.csproj">
+      <Project>{D0D1C4B7-7CE7-4488-A128-29CAE7761ED7}</Project>
+      <Name>ActionBarSherlockBinding</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <MonoAndroidResourcePrefix>$(MonoAndroidResourcePrefix);AbsResources</MonoAndroidResourcePrefix>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <CreateTemporaryDirectory>
+      <Output TaskParameter="TemporaryDirectory" PropertyName="ResgenTemporaryDirectory" />
+    </CreateTemporaryDirectory>
+    <CreateResgenManifest ManifestOutputFile="$(ResgenTemporaryDirectory)\AndroidManifest.xml" PackageName="com.actionbarsherlock" />
+    <ConvertResourcesCases ResourceDirectory="$(MonoAndroidResDirIntermediate)" AcwMapFile="$(_AcwMapFile)" />
+    <Aapt AndroidSdkDirectory="$(_AndroidSdkDirectory)" JavaPlatformJarPath="$(JavaPlatformJarPath)" ManifestFile="$(ResgenTemporaryDirectory)\AndroidManifest.xml" ResourceDirectory="$(MonoAndroidResDirIntermediate)" JavaDesignerOutputDirectory="$(ResgenTemporaryDirectory)" ResourceOutputFile="$(ResgenTemporaryDirectory)\resources.apk" ExtraArgs="$(AndroidResgenExtraArgs)" />
+    <CopyIfChanged Source="$(ResgenTemporaryDirectory)\R.java" Destination="$(IntermediateOutputPath)android\src\com\actionbarsherlock\R.java" Condition="Exists ('$(ResgenTemporaryDirectory)\R.java')" />
+    <RemoveDirFixed Directories="$(ResgenTemporaryDirectory)" />
+  </Target>
+</Project>

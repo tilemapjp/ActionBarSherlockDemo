@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/menu_save1"
+        android:icon="@drawable/Icon"
+        android:title="Test 1"
+        android:showAsAction="ifRoom|withText" />
+
+  <item android:id="@+id/menu_save2"
+        android:icon="@drawable/Icon"
+        android:title="Test 2"
+        android:showAsAction="ifRoom|withText" />
+
+  <item android:id="@+id/menu_save3"
+        android:icon="@drawable/Icon"
+        android:title="Test 3"
+        android:showAsAction="ifRoom|withText" />
+
+  <item android:id="@+id/menu_save4"
+        android:icon="@drawable/Icon"
+        android:title="Test 4"
+        android:showAsAction="ifRoom|withText" />
+</menu>
